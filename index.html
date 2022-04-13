@@ -2,10 +2,32 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/game.js" defer></script>
   <title>Rock Paper Scissors</title>
 </head>
 <body>
   <h1>Rock Paper Scissors</h1>
+  <div id="results">
+    <img id="round1" class="round" src="img/round-default.svg">
+    <img id="round2" class="round" src="img/round-default.svg">
+    <img id="round3" class="round" src="img/round-default.svg">
+    <img id="round4" class="round" src="img/round-default.svg">
+    <img id="round5" class="round" src="img/round-default.svg">
+  </div>
+  <div id="choices">
+    <img id="choice-player" class="choice" src="img/choice-default.svg">
+    <p id="match-result">YOU WON!</p>
+    <img id="choice-computer" class="choice" src="img/choice-default.svg">
+  </div>
+  <div id="controls">
+    <div class="button">Play</div>
+    <div id="choice">
+      <div class="button">Rock</div>
+      <div class="button">Paper</div>
+      <div class="button">Scissors</div>
+    </div>
+    <div class="button">Abort</div>
+  </div>
 </body>
 </html>
