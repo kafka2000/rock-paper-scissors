@@ -5,7 +5,7 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 
 #results {
@@ -21,15 +21,84 @@ img.round {
 #choices {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+img.player {
+  width: 100px;
 }
 
 img.choice {
-  width: 200px;
+  width: 150px;
 }
 
 p#match-result {
   font-size: 40px;
   font-weight: bold;
   font-family: "Helvetica Neue", "Helvetica";
+  text-align: center;
+  width: 300px;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+#start-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#start-end .button {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  border: 5px solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  cursor: default;
+}
+
+#start.button {
+  border-color: rgb(0, 56, 0);
+  color: rgb(0, 56, 0);
+  background-color: rgb(97, 151, 97);
+}
+
+#end.button {
+  border-color: rgb(56, 0, 0);
+  color: rgb(56, 0, 0);
+  background-color: rgb(151, 97, 97);
+}
+
+#weapons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  /* gap: 50px; */
+}
+
+img.weapon {
+  width: 100px;
+  padding: 10px;
+  border: 10px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
 }
